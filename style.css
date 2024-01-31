@@ -90,6 +90,29 @@ h2 {
   color: white;
 }
 
+.discount :last-child {
+  color: black;
+  background-color: red;
+  padding: 0.2rem;
+}
+
+.discount {
+  display: flex;
+  justify-content: space-between;
+}
+
+.productlist article.soldOut::before {
+  content: "Sold Out";
+  position: absolute;
+  background-color: black;
+  color: white;
+  padding: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.productlist article.soldOut img {
+  opacity: 50%;
+}
+
 @media (min-width: 700px) {
   .mainNav {
     display: flex;
