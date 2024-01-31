@@ -4,6 +4,8 @@
   padding: 0;
 }
 
+/* allmän style */
+
 body {
   margin: calc((100vh / 25) * 1.563) calc((100vw / 25) * 1.563);
   font-weight: 400;
@@ -20,6 +22,12 @@ a {
 }
 .mainNav h1 span {
   color: red;
+}
+
+.smallProduct p,
+a {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
 }
 
 h1,
@@ -42,6 +50,7 @@ h2 {
   letter-spacing: -0.12rem;
   line-height: 1.2;
 }
+/* kategori.html */
 .categorylist {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -56,10 +65,40 @@ h2 {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* produktliste.html */
+.smallProduct img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.productlist main h2 {
+  grid-column: 1/-1;
+}
+
+.productlist article {
+  margin-bottom: 2rem;
+}
+
+.productlist article h3 {
+  font-size: 1.2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+.subtle {
+  opacity: 70%;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
 @media (min-width: 700px) {
   .mainNav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+  }
+  .productlist main {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 290px));
+    gap: 2rem;
   }
 }
