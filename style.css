@@ -122,6 +122,45 @@ h2 {
 .purchase h3 {
   font-size: 2rem;
 }
+.purchase p {
+  margin-bottom: 2rem;
+}
+
+label {
+  display: flex;
+  gap: 1.5rem;
+  font-weight: bold;
+}
+
+select {
+  min-width: 100px;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 20px;
+}
+
+.purchase button {
+  width: 100%;
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: white;
+  border: none;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: rgb(186, 183, 183);
+  cursor: pointer;
+}
+
+dt {
+  font-weight: bold;
+  color: white;
+}
+dd {
+  margin-left: 1rem;
+  color: white;
+}
 
 @media (min-width: 700px) {
   .mainNav {
