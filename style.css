@@ -84,11 +84,11 @@ h2 {
   margin-bottom: 2rem;
 }
 
-.productlist article h3 {
+.clothes_name {
   font-size: 1.2rem;
   color: white;
 }
-.subtle {
+.clothes_price {
   opacity: 70%;
   color: white;
 }
