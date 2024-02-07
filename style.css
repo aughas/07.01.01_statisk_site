@@ -170,6 +170,13 @@ dd {
   display: none;
 }
 
+/* test med beer script, single produkt page */
+.single_beer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+}
+
 @media (min-width: 700px) {
   .mainNav {
     display: flex;
