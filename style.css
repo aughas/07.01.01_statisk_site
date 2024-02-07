@@ -104,14 +104,15 @@ h2 {
   justify-content: space-between;
 }
 
-.productlist article.soldOut::before {
+/* lägg till i article */
+.soldOut::before {
   content: "Sold Out";
   position: absolute;
   background-color: black;
   color: white;
   padding: 1rem;
 }
-.productlist article.soldOut img {
+.soldOut img {
   opacity: 50%;
 }
 
@@ -163,6 +164,10 @@ dt {
 dd {
   margin-left: 1rem;
   color: white;
+}
+
+.hide {
+  display: none;
 }
 
 @media (min-width: 700px) {
