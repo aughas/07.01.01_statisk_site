@@ -33,9 +33,9 @@ function showclothes(clothesJSON) {
     clothesClone.querySelector(".clothes_image").src = `https://kea-alt-del.dk/t7/images/webp/640/${clothes.id}.webp`;
     clothesClone.querySelector(".clothes_image").alt = `Picture of a ${clothes.name} clothes`;
 
-    // if (clothes.soldout == 1) {
-    //   clothesClone.querySelector(".clothes_image_container").classList.add("soldOut");
-    // }
+    if (clothes.soldout == 1) {
+      clothesClone.querySelector(".clothes_image_container").classList.add("soldOut");
+    }
 
     clothesClone.querySelector(".clothes_name").textContent = clothes.productdisplayname;
     clothesClone.querySelector(".clothes_price span").textContent = clothes.price;
