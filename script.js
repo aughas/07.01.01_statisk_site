@@ -35,7 +35,7 @@ function showclothes(clothesJSON) {
     clothesClone.querySelector(".clothes_name").textContent = clothes.productdisplayname;
     clothesClone.querySelector(".clothes_price span").textContent = clothes.price;
     clothesClone.querySelector(".clothes_brandname").textContent = clothes.brandname;
-    clothesClone.querySelector("a").href = `single.html?id=${clothes.id}`;
+    clothesClone.querySelector("a").href = `produkt.html?id=${clothes.id}`;
     clothesContainer.appendChild(clothesClone);
   });
 }
