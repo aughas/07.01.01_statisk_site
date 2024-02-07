@@ -117,16 +117,16 @@ h2 {
 }
 
 /* produkt.html */
-.single_beer_text {
+.single_clothes_text {
   padding: 1rem;
   background-color: rgb(230, 228, 228);
 }
 
-.single_beer_text h3 {
+.single_clothes_text h3 {
   font-size: 2rem;
   color: white;
 }
-.single_beer_text p {
+.single_clothes_text p {
   margin-bottom: 2rem;
 }
 
@@ -143,7 +143,7 @@ select {
   border-radius: 20px;
 }
 
-.single_beer_text button {
+.single_clothes_text button {
   width: 100%;
   margin-top: 1rem;
   padding: 1rem;
@@ -183,16 +183,16 @@ dd {
     grid-template-columns: repeat(auto-fill, minmax(150px, 290px));
     gap: 2rem;
   }
-  .single_beer {
+  .single_clothes {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
   }
-  .single_beer_info img {
+  .single_clothes_info {
     grid-row: 1/5;
     grid-column: 1/2;
   }
-  .single_beer_text {
+  .single_clothes_text {
     grid-row: 1/4;
     grid-column: 2/3;
   }
