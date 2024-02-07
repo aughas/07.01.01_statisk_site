@@ -117,16 +117,16 @@ h2 {
 }
 
 /* produkt.html */
-.purchase {
+.single_beer_text {
   padding: 1rem;
   background-color: rgb(230, 228, 228);
 }
 
-.purchase h3 {
+.single_beer_text h3 {
   font-size: 2rem;
   color: white;
 }
-.purchase p {
+.single_beer_text p {
   margin-bottom: 2rem;
 }
 
@@ -143,7 +143,7 @@ select {
   border-radius: 20px;
 }
 
-.purchase button {
+.single_beer_text button {
   width: 100%;
   margin-top: 1rem;
   padding: 1rem;
@@ -171,11 +171,6 @@ dd {
 }
 
 /* test med beer script, single produkt page */
-.single_beer {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 2rem;
-}
 
 @media (min-width: 700px) {
   .mainNav {
@@ -188,16 +183,16 @@ dd {
     grid-template-columns: repeat(auto-fill, minmax(150px, 290px));
     gap: 2rem;
   }
-  .produktInfo {
+  .single_beer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
   }
-  .produktImg {
+  .single_beer_info img {
     grid-row: 1/5;
     grid-column: 1/2;
   }
-  .purchase {
+  .single_beer_text {
     grid-row: 1/4;
     grid-column: 2/3;
   }
