@@ -20,6 +20,7 @@ body {
 }
 a {
   border-radius: 30px;
+  text-decoration: none;
 }
 
 img {
