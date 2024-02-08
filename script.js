@@ -32,9 +32,14 @@ function showclothes(clothesJSON) {
     clothesClone = clothesTemplate.cloneNode(true).content;
     clothesClone.querySelector(".clothes_image").src = `https://kea-alt-del.dk/t7/images/webp/640/${clothes.id}.webp`;
     clothesClone.querySelector(".clothes_image").alt = `Picture of a ${clothes.name} clothes`;
+    clothesClone.querySelector(".discount span").textContent = clothes.discount;
 
     if (clothes.soldout == 1) {
       clothesClone.querySelector(".clothes_image_container").classList.add("soldOut");
+    }
+
+    if (clothes.discount) {
+      clothesClone.querySelector(".discount").classList.remove("hide");
     }
 
     clothesClone.querySelector(".clothes_name").textContent = clothes.productdisplayname;
